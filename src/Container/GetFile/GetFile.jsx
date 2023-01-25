@@ -39,8 +39,6 @@ const GetFile = () => {
 
   // ==== Firebase/ ====
 
-  console.log(url);
-
   return (
     <div className="getfile">
       <div className="container">
