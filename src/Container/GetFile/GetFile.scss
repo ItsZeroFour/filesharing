@@ -1,0 +1,104 @@
+.getfile__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getfile__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 30rem;
+  height: 35rem;
+  margin-top: 10rem;
+  background: var(--color-dark-white) !important;
+  border-radius: var(--border-radius-lg) !important;
+}
+
+.getfile__content-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getfile__content-input {
+  width: 20rem;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  border-radius: var(--border-radius-lg) !important;
+  border: 1px solid var(--color-gray) !important;
+
+  &::placeholder {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 398px) {
+    width: 15rem;
+  }
+
+  @media (max-width: 306px) {
+    width: 10rem;
+  }
+}
+
+.getfile__content-button {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  border-radius: var(--border-radius-lg) !important;
+  background: var(--color-blue) !important;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--color-white) !important;
+  box-shadow: 0px 0px 5px var(--color-blue) !important;
+  margin-top: auto;
+  transition: var(--transition);
+
+  p {
+    margin-left: 0.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 10px var(--color-blue) !important;
+  }
+
+  @media (max-width: 288px) {
+    font-size: 1rem;
+  }
+}
+
+.download__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+
+  p {
+    text-align: center;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    width: 15rem;
+    padding: 5px; /* Поля вокруг текста */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+  }
+
+  .getfile__content-button {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+.sentfile__link {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-decoration: underline dashed;
+}
+
+.notfound-file {
+  margin-top: 1rem;
+}

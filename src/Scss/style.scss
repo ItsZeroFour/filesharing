@@ -1,0 +1,8 @@
+// Main styles
+@import "./reset";
+@import "./vars";
+@import "./loading.scss";
+// Container
+@import "../Container/FileSharing/FileSharing.scss";
+@import "../Container/GetFile/GetFile.scss";
+@import "../Container/NotFound/NotFound.scss";

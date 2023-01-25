@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./Scss/App.scss";
+import FileSharing from "./Container/FileSharing/FileSharing";
+import { Route, Routes } from "react-router-dom";
+import GetFile from "./Container/GetFile/GetFile";
+import NotFound from "./Container/NotFound/NotFound.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="filesharing/" element={<FileSharing />} />
+        <Route path="filesharing/getfile" element={<GetFile />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
